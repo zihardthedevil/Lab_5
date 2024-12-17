@@ -23,6 +23,7 @@ void fsm_cp_run(void) {
         		}
         	}
         	if (cp[1] == 'O') {
+        		status_uart = get_ok;
         	    for (int i = 0; i< 10; i++) {
         	        cp[i] = '\0';
         	      }
